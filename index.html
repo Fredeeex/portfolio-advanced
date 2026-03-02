@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dan Fred | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Premium portfolio template (HTML/CSS/JS) with dark/light toggle, glass UI, animations, and project modals." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top progress -->
+  <div class="progress" aria-hidden="true">
+    <div class="progress__bar" id="progressBar"></div>
+  </div>
+
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="logo" href="#top" aria-label="Home">DanFred</a>
+
+      <button class="nav__toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false">
+        <span class="sr-only">Toggle menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav__menu" id="navMenu">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#contact">Contact</a>
+
+        <!-- Theme toggle -->
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="icon" aria-hidden="true">☾</span>
+          <span class="btn-text">Theme</span>
+        </button>
+
+        <a class="btn btn--small" href="#projects">View Work</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="pill">Available for freelance • UK</p>
+          <h1 class="title">
+            Hi, I’m <span class="grad">Dan</span> 👋
+          </h1>
+
+          <p class="subtitle">
+            I build <strong>fast</strong>, <strong>modern</strong> websites with clean UI/UX.
+          </p>
+
+          <p class="typing">
+            <span class="typing__label">I’m a</span>
+            <span class="typing__text" id="typingText" aria-live="polite"></span>
+            <span class="typing__caret" aria-hidden="true"></span>
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn btn--ghost" href="#contact">Hire Me</a>
+          </div>
+
+          <div class="hero__stats" aria-label="Highlights">
+            <div class="stat glass">
+              <span class="stat__n">6+</span>
+              <span class="stat__k">Years editing / creative</span>
+            </div>
+            <div class="stat glass">
+              <span class="stat__n">3</span>
+              <span class="stat__k">Premium templates</span>
+            </div>
+            <div class="stat glass">
+              <span class="stat__n">100%</span>
+              <span class="stat__k">Responsive-first</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="orb orb--a"></div>
+          <div class="orb orb--b"></div>
+          <div class="hero-card glass">
+            <div class="hero-card__top">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="hero-card__body">
+              <div class="line big"></div>
+              <div class="line"></div>
+              <div class="line short"></div>
+              <div class="chips">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="line"></div>
+              <div class="line short"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="head reveal">
+          <h2>About</h2>
+          <p>Clean design, performance, and client-ready delivery.</p>
+        </div>
+
+        <div class="about glass reveal">
+          <div>
+            <h3>What I do</h3>
+            <p>
+              I design and build modern websites and landing pages that convert.
+              Strong focus on structure, accessibility, and performance.
+            </p>
+            <ul class="ticks">
+              <li>Mobile-first layout and clean UI</li>
+              <li>Reusable components & neat handoff</li>
+              <li>Animation that feels premium (not heavy)</li>
+            </ul>
+          </div>
+
+          <div class="about__side">
+            <div class="badge-row">
+              <span class="mini-badge">UI/UX</span>
+              <span class="mini-badge">Frontend</span>
+              <span class="mini-badge">Freelance</span>
+            </div>
+            <div class="quote">
+              “Clients want fast delivery + clean design. That’s the whole game.”
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="head reveal">
+          <h2>Skills</h2>
+          <p>Animated progress bars when the section enters the viewport.</p>
+        </div>
+
+        <div class="skills glass reveal" id="skillsWrap">
+          <div class="skill">
+            <div class="skill__top">
+              <span>HTML</span><span class="skill__pct">95%</span>
+            </div>
+            <div class="bar"><div class="bar__fill" data-width="95%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__top">
+              <span>CSS</span><span class="skill__pct">90%</span>
+            </div>
+            <div class="bar"><div class="bar__fill" data-width="90%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__top">
+              <span>JavaScript</span><span class="skill__pct">85%</span>
+            </div>
+            <div class="bar"><div class="bar__fill" data-width="85%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__top">
+              <span>UI / Visual</span><span class="skill__pct">88%</span>
+            </div>
+            <div class="bar"><div class="bar__fill" data-width="88%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="head reveal">
+          <h2>Projects</h2>
+          <p>Filter, preview, and open details in a modal.</p>
+        </div>
+
+        <div class="filters reveal" role="tablist" aria-label="Project filters">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="landing" role="tab" aria-selected="false">Landing</button>
+          <button class="filter" data-filter="template" role="tab" aria-selected="false">Templates</button>
+          <button class="filter" data-filter="ui" role="tab" aria-selected="false">UI</button>
+        </div>
+
+        <div class="grid reveal" id="projectGrid">
+          <!-- Cards injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <div class="head reveal">
+          <h2>Contact</h2>
+          <p>Quick hire link + email.</p>
+        </div>
+
+        <div class="contact glass reveal">
+          <div class="contact__item">
+            <span class="k">Email</span>
+            <span class="v"><a class="link" href="mailto:danfredeee@gmail.com">danfredeee@gmail.com</a></span>
+          </div>
+          <div class="contact__item">
+            <span class="k">Location</span>
+            <span class="v">United Kingdom</span>
+          </div>
+          <div class="contact__item">
+            <span class="k">Availability</span>
+            <span class="v">Freelance / Contract</span>
+          </div>
+
+          <div class="contact__cta">
+            <a class="btn" href="mailto:danfredeee@gmail.com?subject=Project%20Inquiry%20-%20Portfolio">Email Me</a>
+            <a class="btn btn--ghost" href="#projects">See Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Project details">
+      <button class="modal__close" id="modalClose" aria-label="Close">✕</button>
+
+      <div class="modal__hero" id="modalHero" aria-hidden="true"></div>
+
+      <div class="modal__body">
+        <div class="modal__head">
+          <h3 id="modalTitle">Project Title</h3>
+          <div class="modal__tags" id="modalTags"></div>
+        </div>
+
+        <p class="modal__desc" id="modalDesc"></p>
+
+        <div class="modal__actions">
+          <a class="btn" id="modalLive" href="#" target="_blank" rel="noreferrer">Live Demo</a>
+          <a class="btn btn--ghost" id="modalRepo" href="#" target="_blank" rel="noreferrer">Repository</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Dan Fred</p>
+      <a class="link" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
